@@ -9,7 +9,7 @@ function Header() {
         <h1 style={{ letterSpacing: "1px", textAlign: "left" }}>
           <Link href="/">
             <a>
-              <span style={{ fontWeight: 100 }}>99APortfolio</span>
+              <span style={{ fontWeight: 100 }}>Portfolio</span>
             </a>
           </Link>
         </h1>
