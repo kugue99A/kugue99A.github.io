@@ -8,7 +8,7 @@ type LayoutProps = {
 function MainLayout({ children }: LayoutProps): JSX.Element {
   return (
     <>
-      <Header />
+      {/* <Header /> */} 
       <main className={styles.main}>{children}</main>
     </>
   );
