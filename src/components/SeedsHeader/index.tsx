@@ -5,7 +5,7 @@ import Link from "next/link";
 function SeedsHeader() {
   return (
     <section>
-      <header className={styles.header-container}>
+      <header className={styles.header}>
         <a href="#">Logo</a>
         <a href="#">Account</a>
       </header>
