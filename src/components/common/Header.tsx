@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import Image from 'next/image';
 import Account from '@components/icons/Account';
 
 function Header() {
@@ -66,10 +65,10 @@ function Header() {
   return (
     <HeaderContainer>
       <Header>
-      <Image
+      <img
         src={imagePath} 
-        height={20} 
-        width={142}
+        height="20" 
+        width="142"
       />
       <HeaderImage>
       <Account 
