@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+import SeedsHeader from "../components/SeedsHeader"
 import styles from "./index.module.scss";
 
 type LayoutProps = {
@@ -9,6 +9,7 @@ function MainLayout({ children }: LayoutProps): JSX.Element {
   return (
     <>
       {/* <Header /> */} 
+      <SeedsHeader /> 
       <main className={styles.main}>{children}</main>
     </>
   );
