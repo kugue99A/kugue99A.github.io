@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import Image from 'next/image'
 import styled from 'styled-components'
 import Button from '@components/common/Button'
 import LoginLayout from '@components/layout/LoginLayout'
