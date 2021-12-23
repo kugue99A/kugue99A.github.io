@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import Image from 'next/image';
-import HeaderLogo from "@components/icons/HeaderLogo";
 import Account from '@components/icons/Account';
 
 function Header() {
