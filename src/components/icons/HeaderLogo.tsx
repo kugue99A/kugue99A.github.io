@@ -6,7 +6,7 @@ type Props = {
 
 const HeaderLogo = (props: Props) => {
   return (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2470.19 515.81" width={ props.width } height={ props.height } fill={ props.color || "white" }>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2470.19 515.81" width={ props.width } height={ props.height } fill={ props.color || "var(--primary)" }>
       <path class="cls-1" d="M952.76,409.82H942L749.38,189.41V409.82H712.85V106h10.8l193.83,223.3V106h35.28Z"/>
       <path class="cls-1" d="M1194.74,288.62q0,46.06-9.33,70.76t-33.22,41.3q-23.87,16.6-55.82,16.61-25.32,0-45.66-8.09t-33.83-22.84a88,88,0,0,1-19.29-32.79q-5.82-18.06-5.81-64.95V106h35.69V288.62q0,29.47,1.66,42.54a60.58,60.58,0,0,0,9.54,25.32q7.89,12.25,22.62,19.51t33.41,7.27q22.42,0,38.82-13.08t21.16-30.31q4.78-17.21,4.78-51.25V106h35.28Z"/>
       <path class="cls-1" d="M1428.26,140.85H1345v269h-36.11v-269H1225.2V106h203.06Z"/>

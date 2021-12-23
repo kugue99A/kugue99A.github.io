@@ -1,32 +1,30 @@
 :root {
-  --primary: #ffac5d;
-  --primary-2: #f1f3f5;
-  --secondary: #000000;
-  --secondary-2: #111;
+  --primary: #eb1a8b;
+  --primary-2: #fff067;
+  --secondary: #333333;
+  --secondary-2: #666666;
   --selection: var(--cyan);
 
-  --text-base: #333333;
+  --text-base: #777777;
   --text-primary: #333333;
   --text-secondary: white;
 
   --hover: rgba(0, 0, 0, 0.075);
   --hover-1: rgba(0, 0, 0, 0.15);
   --hover-2: rgba(0, 0, 0, 0.25);
+
   --cyan: #22b8cf;
   --green: #37b679;
   --red: #da3c3c;
   --purple: #f81ce5;
   --blue: #3495e8;
-
   --pink: #ff0080;
   --pink-light: #ff379c;
-
   --magenta: #eb367f;
-
   --violet: #7928ca;
   --violet-dark: #4c2889;
 
-  --accent-0: #fff;
+  --accent-0: #ffffff;
   --accent-1: #fafafa;
   --accent-2: #eaeaea;
   --accent-3: #999999;
@@ -35,9 +33,13 @@
   --accent-6: #444444;
   --accent-7: #333333;
   --accent-8: #111111;
-  --accent-9: #000;
+  --accent-9: #000000;
 
-  --card-radius: 25px;
+  --card-radius: 0px;
+
+  --button-primary: var(--primary);
+  --button-secondary: var(--primary-2);
+  --button-radius: 50px;
 
   --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
     'Helvetica', sans-serif;
@@ -86,13 +88,27 @@ html {
 
 html,
 body {
+  height: 100%;
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
+  background-color: var(--accent-0);
   color: var(--text-primary);
   overscroll-behavior-x: none;
+}
+
+#__next {
+  height: 100%;
+}
+
+main {
+  animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
 body {
@@ -101,8 +117,35 @@ body {
   margin: 0;
 }
 
+h1 {
+  color: var(--text-primary);
+  font-size: 48px;
+  margin: 50px
+}
+
+h2 {
+  color: var(--text-primary);
+  font-size: 36px;
+  margin: 0px
+}
+
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+table {
+  width: 100%;
+  margin: 50px 0px;
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid #efefef;
+  padding: 30px 50px 30px 30px;
+}
+
+span {
+  font-size: 16px;
 }
 
 .animated {

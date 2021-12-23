@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
+import Image from 'next/image';
 import HeaderLogo from "@components/icons/HeaderLogo";
+import Account from '@components/icons/Account';
 
 function Header() {
 
-  const [headerColor, setHeaderColor] = useState("white");
+  const [headerColor, setHeaderColor] = useState("var(--secondary)");
 
-  const [headerBackgroundColor, setHeaderBackgroundColor] = useState("var(--primary)");
+  const [headerBackgroundColor, setHeaderBackgroundColor] = useState("white");
 
   const [headerShadow, setHeadershadow] = useState("0px");
 
   const listenScrollEvent = () => {
     if (window.scrollY < 1) {
-      return setHeaderBackgroundColor("var(--primary)"), setHeaderColor("white"), setHeadershadow("0px");
+      return setHeaderBackgroundColor("var(--accent0)"), setHeaderColor("var(--secondary)"), setHeadershadow("0px");
     } else {
       return setHeaderBackgroundColor("rgba(255, 255, 255, 0.8)"), setHeaderColor("var(--primary)"), setHeadershadow("4px 20px rgba(0, 0, 0, 0.25)");
     }
@@ -42,24 +44,41 @@ function Header() {
     top: 0;
     height: 60px;
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 200px;
     z-index: 1;
+    display: flex;
+    justify-content: start;
+  `
+
+  const HeaderImage = styled.div`
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
   `
 
   const Header = styled.header`
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
   `
+  const imagePath = "/logo.svg";
 
   return (
     <HeaderContainer>
       <Header>
-        <HeaderLogo
-          height="30"
-          width="142"
-          color={ headerColor }
-        />
+      <Image
+        src={imagePath} 
+        height={20} 
+        width={142}
+      />
+      <HeaderImage>
+      <Account 
+        height={30}
+        width={30}
+        color={headerColor}
+      />
+      </HeaderImage>
       </Header>
     </HeaderContainer>
   );

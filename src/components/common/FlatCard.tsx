@@ -2,23 +2,32 @@ import React from "react";
 import styled from "styled-components";
 
 type CardContentsProps = {
+  width?: string
+  height?: string
+  align?: string
+  justify?: string
   children: React.ReactNode;
 };
 
-function FlatCard({ children }: CardContentsProps): JSX.Element {
+function FlatCard(props: CardContentsProps): JSX.Element {
   const FlatCardContainer = styled.div`
     background-color: var(--accent-0);
-    min-height: 1000px;
-    min-width: 800px;
-    max-width: 1200px;
+    width: ${props.width};
+    height: ${props.height};
     border-radius: var(--card-radius);
-    padding: 50px;
-    margin-bottom: 50px;
+    padding: 0px;
+    backdrop-filter: blur(4px);
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: ${props.align || "start"};
+    justify-content: ${props.justify || "start"}
+    font-size: 24px;
   `;
 
   return (
     <>
-      <FlatCardContainer>{children}</FlatCardContainer>
+      <FlatCardContainer>{ props.children }</FlatCardContainer>
     </>
   );
 }
