@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
 import styled from 'styled-components'
-import Button from '@components/common/Button'
+import Button from '@components/common/TestButton'
 import LoginLayout from '@components/layout/LoginLayout'
 import GlassCard from '@components/common/GlassCard'
 
