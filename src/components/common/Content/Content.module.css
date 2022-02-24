@@ -1,0 +1,26 @@
+.contentContainer {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.contentContainer table {
+  border: none;
+  font-size: 1.6rem;
+}
+
+.contentContainer th {
+  text-align: end;
+  vertical-align: middle;
+  border: none;
+  width: 50%;
+}
+
+.contentContainer td {
+  font-weight: 300;
+  text-align: start;
+  vertical-align: middle;
+  border: none;
+  width: 50%;
+}

@@ -5,7 +5,7 @@
   --secondary-2: #666666;
   --selection: var(--cyan);
 
-  --text-base: #777777;
+  --text-base: #504945;
   --text-primary: #333333;
   --text-secondary: white;
 
@@ -78,6 +78,9 @@
 }
 
 html {
+  color: #504945;
+  font-family: 'Inter', sans-serif;
+  font-size: 62.5%;
   height: 100%;
   box-sizing: border-box;
   touch-action: manipulation;
@@ -88,12 +91,11 @@ html {
 
 html,
 body {
-  height: 100%;
-  font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
+  overscroll-behavior-y: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--accent-0);
+  background: linear-gradient(116.82deg, #E4DCC8 0%, #EBDBB2 47.96%, #E1D4B0 100%);
   color: var(--text-primary);
   overscroll-behavior-x: none;
 }
@@ -113,20 +115,27 @@ main {
 
 body {
   position: relative;
-  min-height: 100%;
+  height: 100%;
   margin: 0;
 }
 
 h1 {
-  color: var(--text-primary);
-  font-size: 48px;
-  margin: 50px
+  font-size: 3.6rem;
+  font-weight: 500;
 }
 
 h2 {
-  color: var(--text-primary);
-  font-size: 36px;
-  margin: 0px
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 a {
@@ -140,8 +149,6 @@ table {
 
 td {
   border: none;
-  border-bottom: 1px solid #efefef;
-  padding: 30px 50px 30px 30px;
 }
 
 span {
