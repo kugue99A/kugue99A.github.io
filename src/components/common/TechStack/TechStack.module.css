@@ -4,6 +4,17 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  animation: fadeIn .3s ease 0s 1 alternate none running;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .contentContainer table {
@@ -12,6 +23,7 @@
 }
 
 .contentContainer th {
+  padding: 0.7rem;
   text-align: end;
   vertical-align: middle;
   border: none;

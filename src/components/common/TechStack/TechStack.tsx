@@ -4,13 +4,20 @@ import s from './TechStack.module.css';
 const TechStack = () => {
   return (
     <div className={s.contentContainer}>
-      <img src='/99a.png'/>
       <table>
         <tbody>
-          <tr><th>Name:</th><td>久々江 耀平</td></tr>
-          <tr><th>University:</th><td>長岡技術科学大学</td></tr>
-          <tr><th>From:</th><td>群馬県</td></tr>
-          <tr><th>Favorite:</th><td>ラーメン二郎, vim, サウナ, 散歩</td></tr>
+          <tr><th>HTML</th><td>ホームページ作成，Webフロント</td></tr>
+          <tr><th>CSS</th><td>ホームページ作成，Webフロント</td></tr>
+          <tr><th>JavaScript</th><td>ホームページ作成，Webフロント</td></tr>
+          <tr><th>TypeScript</th><td>Webフロント，APIサーバー（試作）</td></tr>
+          <tr><th>Vue.js</th><td>Webフロント</td></tr>
+          <tr><th>Nuxt</th><td>Webフロント</td></tr>
+          <tr><th>React</th><td>Webフロント</td></tr>
+          <tr><th>Next.js</th><td>Webフロント</td></tr>
+          <tr><th>Dart</th><td>Webフロント, モバイル</td></tr>
+          <tr><th>Flutter</th><td>Webフロント, モバイル</td></tr>
+          <tr><th>Fortran</th><td>物理演算</td></tr>
+          <tr><th>Python</th><td>物理演算, 機械学習</td></tr>
         </tbody>
       </table>
     </div>
