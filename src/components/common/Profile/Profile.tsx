@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-import s from './Content.module.css';
+import React from 'react';
+import s from './Profile.module.css';
 
-const Content = () => {
+const Profile = () => {
   return (
     <div className={s.contentContainer}>
       <img src='/99a.png'/>
@@ -17,4 +17,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Profile;
