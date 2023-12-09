@@ -1,3 +1,6 @@
-FROM node:16.13.0
+FROM node:20.10.0-slim AS node
+FROM ubuntu:22.10 AS base
 
-WORKDIR /app
+COPY --from=node /usr/local/include/ /usr/local/include/
+COPY --from=node /usr/local/lib/ /usr/local/lib/
+COPY --from=node /usr/local/bin/ /usr/local/bin/

@@ -1,0 +1,11 @@
+services:
+  site:
+    build: .
+    container_name: "site"
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
