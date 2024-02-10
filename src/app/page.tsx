@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <Flex direction="column" mx="4">
+        <Flex direction="column">
           <h1>test test</h1>
           <h1>test test</h1>
           <h1>test test</h1>
