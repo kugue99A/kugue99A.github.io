@@ -12,7 +12,7 @@ type FlexProps = {
 
 const Flex: FC<FlexProps> = (props) => {
   const { children, direction = 'row' } = props
-  const rootClassName = clsx(s.root, s[direction])
+  const rootClassName = clsx(s.root, s[direction], 'px-4')
   return <div className={rootClassName}>{children}</div>
 }
 
