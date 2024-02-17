@@ -8,7 +8,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <Flex direction="column">
-          <h1 className="">99A</h1>
+          <h1 className="underline">99A</h1>
         </Flex>
       </div>
     </main>
